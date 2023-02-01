@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+html, body{
+    background: rgb(127, 111, 156);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    color: #2b2627;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #240d0d;
+}
+
+.teste{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    width: 70%;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pergunta{
+
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.pergunta >div:first-of-type{
+        display: flex;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.pergunta >div:first-of-type>div{
+        font-family: "Montserrat";
+    font-weight: 600;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: linear-gradient(176deg, #e00013, #af0007);
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+}
+
+.pergunta >div:last-of-type{
+    flex: 1;
+    padding-top: 10px;
+}
+
+.pergunta p{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    line-height: 1.25;
+}
+
+.pergunta >div:last-of-type div{
+    display: flex;
+    
+    margin-bottom: 20px;
+}
+
+.pergunta input[type='radio'] {
+    display: none;
+}
+
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.pergunta input[type='radio']:checked + label {
+    background-color: #dc0012;
+}
+
+.pergunta input[type='radio'] + label{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: sub;
+    margin: 0;
+    margin-right: 15px;
+    box-shadow: 0px 0px 0px 5px white inset;
+    transition: all .4s ease-in-out;
+}
+
+.pergunta input[type='radio'] + label::after {
+    content: "";
+    border: 1px solid #c9c8c8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+}
